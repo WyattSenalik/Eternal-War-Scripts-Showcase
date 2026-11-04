@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="..\ExternalFiles\GameDataShared\EternalWar.Core.csproj" />
+	<ProjectReference Include="..\ExternalFiles\ServerSource\GameLogic\NetworkGameServer\EternalWar.Server.Application.csproj" />
+	<ProjectReference Include="..\Networking\Networking.Server\Networking.Server.csproj" />
+	<ProjectReference Include="..\Networking\Networking.LiteNetLib\Networking.LiteNetLib.csproj" />
+  </ItemGroup>
+	
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="NetworkGameServer.Tests" />
+  </ItemGroup>
+
+</Project>

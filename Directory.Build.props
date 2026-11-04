@@ -1,0 +1,26 @@
+<Project>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+
+    <!-- Style guide: "There should never be a non-used using statement in a file."
+         IDE0005 (unnecessary using) only fires during build when doc generation is on. -->
+    <ImplicitUsings>disable</ImplicitUsings>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <!-- CS1591: missing XML comment on public member - we document selectively, not exhaustively.
+         CS1573: param lacks a tag when siblings have one - parameters are self-documenting by
+                 default; doc comments exist for the exceptions. -->
+    <NoWarn>$(NoWarn);CS1591;CS1573;CA1707;CA2201;CA1711</NoWarn>
+
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+
+    <Deterministic>true</Deterministic>
+    <RootNamespace>$(MSBuildProjectName)</RootNamespace>
+    <AssemblyName>$(MSBuildProjectName)</AssemblyName>
+  </PropertyGroup>
+
+</Project>

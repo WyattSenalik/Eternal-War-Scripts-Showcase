@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="System.Text.Json" />
+  </ItemGroup>
+
+  <ItemGroup>
+	<ProjectReference Include="..\..\..\GameDataShared\EternalWar.Core.csproj" />
+	<ProjectReference Include="..\..\..\..\Networking\Networking.Server\Networking.Server.csproj" />
+	<ProjectReference Include="..\..\..\..\Networking\Networking.LiteNetLib\Networking.LiteNetLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="EternalWar.Server.Application.Tests" />
+  </ItemGroup>
+
+</Project>

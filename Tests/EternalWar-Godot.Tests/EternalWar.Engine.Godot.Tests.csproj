@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <GodotProjectDir>$(MSBuildThisFileDirectory)..\..\EternalWar-Godot\</GodotProjectDir>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\EternalWar-Godot\EternalWar.Engine.Godot.csproj" />
+    <CompilerVisibleProperty Include="GodotProjectDir" />
+  </ItemGroup>
+
+</Project>

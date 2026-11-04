@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+	  <PackageReference Include="NCalcSync" />
+	  <PackageReference Include="System.Text.Encodings.Web" />
+	  <ProjectReference Include="..\ExternalFiles\GameDataShared\EternalWar.Core.csproj" />
+	  <ProjectReference Include="..\Networking\Networking.Client\Networking.Client.csproj" />
+	  <ProjectReference Include="..\Networking\Networking.LiteNetLib\Networking.LiteNetLib.csproj" />
+	  <ProjectReference Include="..\ExternalFiles\ServerSource\GameLogic\NetworkGameServer\EternalWar.Server.Application.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Network\Messages\Debug\" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<InternalsVisibleTo Include="EternalWar.Client.Application.Tests" />
+	</ItemGroup>
+
+</Project>

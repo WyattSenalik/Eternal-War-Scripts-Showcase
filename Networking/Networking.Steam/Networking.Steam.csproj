@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Facepunch.Steamworks" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Networking.Core\Networking.Core.csproj" />
+  </ItemGroup>
+</Project>

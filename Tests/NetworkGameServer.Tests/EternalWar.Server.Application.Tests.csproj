@@ -1,0 +1,7 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ExternalFiles\ServerSource\GameLogic\NetworkGameServer\EternalWar.Server.Application.csproj" />
+  </ItemGroup>
+
+</Project>

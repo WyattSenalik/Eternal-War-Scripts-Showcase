@@ -1,0 +1,7 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<ItemGroup>
+    <ProjectReference Include="..\..\EternalWar-CSharp\EternalWar.Client.Application.csproj" />
+    <ProjectReference Include="..\..\ExternalFiles\GameDataShared\EternalWar.Core.csproj" />
+  </ItemGroup>
+
+</Project>
