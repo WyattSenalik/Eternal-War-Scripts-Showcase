@@ -1,4 +1,4 @@
-# Eternal War — C# Code Showcase
+# Eternal War C# Code Showcase
 
 This repository contains selected C# contributions I made to **Eternal War**, a multiplayer tactical roguelike built around increasingly difficult combat encounters.
 
